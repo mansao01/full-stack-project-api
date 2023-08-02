@@ -19,11 +19,11 @@ To set up the backend locally, please follow these steps:
 3. Install the dependencies 
 
    ```shell
-   npm install
+   npm install 
+
+4. Make a MySQL database and give it a name: _full_Stack_ or you can configure the database setup in **config/Database.js**
    
-4. Start the backend server
+6. Start the backend server
 
    ```shell  
    npm start
-
-5. Make a MySQL database and give it a name: _full_Stack_ or you can configure the database setup in **config/Database.js**
