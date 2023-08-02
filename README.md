@@ -1,6 +1,6 @@
 # full-stack-project-backend
 this repository contains the backend for [full-stack-project-mobile](https://github.com/mansao01/full-stack-project-mobile)
-this backend has 2 features that can get data and post data
+this backend has 2 features that can get data and post data(for this moment)
 
 ## Installation and Setup Node.js
 
