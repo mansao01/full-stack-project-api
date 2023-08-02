@@ -25,4 +25,5 @@ To set up the backend locally, please follow these steps:
 
    ```shell  
    npm start
-   
+
+5. Make a mysql database and give it name: _full_Stack_ or you can configure the database settup in **config/Database.js**
