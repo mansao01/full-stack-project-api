@@ -33,14 +33,14 @@ export const deleteProfile = async (req, res) => {
             id:req.params.id
         }
     })
-    if (!user) return res.status(404).json({ msg: "Product not found" })
+    if (!user) return res.status(404).json({ msg: "user not found" })
     try {
         await UserModel.destroy({
             where: {
                 id: user.id
             }
         })
-        res.status(200).json({ msg: "Deleted" })
+        res.status(200).json({ msg: "Profile deleted" })
     } catch (e) {
         res.status(400).json({ msg: e.message })
     }
