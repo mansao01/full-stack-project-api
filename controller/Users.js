@@ -28,21 +28,49 @@ export const postProfile = async (req, res) => {
 }
 
 export const deleteProfile = async (req, res) => {
-    const user = await  Users.findOne({
-        where:{
-            id:req.params.id
+    const user = await Users.findOne({
+        where: {
+            id: req.params.id
         }
     })
-    if (!user) return res.status(404).json({ msg: "user not found" })
+    if (!user) return res.status(404).json({msg: "user not found"})
     try {
         await UserModel.destroy({
             where: {
                 id: user.id
             }
         })
-        res.status(200).json({ msg: "Profile deleted" })
+        res.status(200).json({msg: "Profile deleted"})
     } catch (e) {
-        res.status(400).json({ msg: e.message })
+        res.status(400).json({msg: e.message})
+    }
+
+}
+
+export const updateProfile = async (req, res) => {
+    const user = await UserModel.findOne({
+        where: {
+            id: req.params.id
+        }
+    })
+    if (!user) return res.status(400).json({
+        msg: "Profile not found"
+    })
+    const {name, age, address} = req.body
+
+    try {
+        await UserModel.update({
+            name: name,
+            age: age,
+            address: address,
+        }, {
+            where: {
+                id: user.id
+            }
+        })
+        res.status(200).json({msg: "Updated"})
+    } catch (error) {
+        res.status(400).json({msg: error.message})
     }
 
 }
