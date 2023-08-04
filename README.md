@@ -1,5 +1,5 @@
 # full-stack-project-backend
-this repository contains the backend for [full-stack-project-mobile](https://github.com/mansao01/full-stack-project-mobile)
+this repository contains the backend for [full-stack-project-mobile](https://github.com/mansao01/full-stack-project-app)
 this is a CRUD backend project using POST, GET, PATCH, and DELETE methods
 
 ## Installation and Setup Node.js
@@ -9,12 +9,12 @@ To set up the backend locally, please follow these steps:
 1. Clone the repository:
 
    ```shell
-   git clone -b master https://github.com/mansao01/full-stack-project-backend.git
+   git clone -b master https://github.com/mansao01/full-stack-project-api.git
 
 2. Navigate to the project directory:
 
    ```shell
-   cd full-stack-project-backend
+   cd full-stack-project-api
 
 3. Install the dependencies 
 
