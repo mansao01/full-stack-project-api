@@ -1,5 +1,5 @@
 # full-stack-project-backend
-this repository contains the backend for [full-stack-project-mobile](https://github.com/mansao01/full-stack-project-app)
+this repository contains the backend for [full-stack-project-api](https://github.com/mansao01/full-stack-project-app)
 this is a CRUD backend project using POST, GET, PATCH, and DELETE methods
 
 ## Installation and Setup Node.js
